@@ -64,7 +64,7 @@ li:not(:last-child) {
   opacity: 0.75;
 }
 
-.invite-link {
+.header-invite-link, .footer-invite-link {
   text-decoration: none;
   color: white;
   background-image: -webkit-gradient(
@@ -269,9 +269,10 @@ footer {
 }
 @media (max-width: 1023px) {
  
-  .invite-link, .hide-for-mobile {
+  .header-invite-link, .hide-for-mobile {
     display: none;
   }
+  
   .hide-for-desktop {
     display: block;
   }
@@ -381,6 +382,7 @@ padding: .625rem;
   .hero {
     flex-direction: column;
     margin: 0 auto;
+    overflow-x: hidden;
   }
   .hero--image {
     order: 1;
@@ -424,9 +426,6 @@ padding: .625rem;
   }
 }
  @media (max-width:650px) { 
-   /* .hero-text {
-     width: 90%;
-   } */
   .features-head {
     margin: 0 auto;
     width: 80%;
